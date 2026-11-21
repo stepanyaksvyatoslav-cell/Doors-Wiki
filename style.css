@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #171d18;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    padding: 25px 15px;
+    text-align: center;
+    background: #263b2d;
+    border-bottom: 1px solid #526f55;
+}
+
+header h1 {
+    margin: 0;
+    color: #c5e8c5;
+    font-size: 42px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+nav {
+    padding: 12px;
+    text-align: center;
+    background: #202a23;
+}
+
+nav a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #c5e8c5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    max-width: 1050px;
+    width: 92%;
+    margin: 25px auto;
+    padding: 25px;
+    background: #111913;
+    border: 1px solid #39463d;
+}
+
+h2 {
+    padding-bottom: 8px;
+    color: #c5e8c5;
+    border-bottom: 1px solid #39463d;
+}
+
+h3,
+.entity,
+.item,
+.badge {
+    color: #a8caa9;
+}
+
+.info {
+    float: right;
+    width: 270px;
+    margin: 0 0 20px 20px;
+    padding: 15px;
+    background: #263b2d;
+    border: 1px solid #39463d;
+}
+
+.info p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.intro,
+.place,
+.entity,
+.item,
+.badge {
+    background: #26352a;
+    border: 1px solid #39463d;
+}
+
+.intro,
+.place {
+    padding: 15px;
+}
+
+.place {
+    margin: 15px 0;
+}
+
+.place img {
+    display: block;
+    width: 100%;
+    max-height: 320px;
+    margin: 12px 0;
+    object-fit: cover;
+}
+
+.entities,
+.items,
+.badges {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.entities {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.entity,
+.item,
+.badge {
+    padding: 10px;
+    text-align: center;
+}
+
+.entity img,
+.item img,
+.badge img {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 8px;
+    object-fit: contain;
+}
+
+.entity img {
+    height: 210px;
+}
+
+.item img {
+    height: 150px;
+}
+
+.badge img {
+    height: 140px;
+}
+
+.entity p,
+.item p,
+.badge p {
+    color: #eee;
+    font-weight: normal;
+}
+
+.facts li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #26352a;
+    border: 1px solid #39463d;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #202a23;
+    border-top: 1px solid #526f55;
+}
+
+@media (max-width: 700px) {
+    main {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .info {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    .entities,
+    .items,
+    .badges {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 380px) {
+    .entities,
+    .items,
+    .badges {
+        grid-template-columns: 1fr;
+    }
+}
